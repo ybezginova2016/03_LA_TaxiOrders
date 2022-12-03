@@ -12,5 +12,19 @@ The client company ABC, providing tzxi driving services, wants to understand whe
 3. Split the data into train, valid and test samples.
 4. Train different ML models with different hyperparamters.
 5. Choosing the model ML model, making conclusions.
+6. Quality Metric RMSE: Root Mean Square Error <= 40
 
-### Quality Metric RMSE: Root Mean Square Error <= 40
+## Project Outcomes
+- The best model is *Linear Regression* wit RMSE = 45.45.
+- Target value for RMSE < 48 as agreed with the client.
+- Time Series is a hard type of data to train. Hence, even though the best RMSE score is for *lightGBM* algorithm, it is worth considering less complex forecasting models such as *Linear Regression*.
+
+## Key Python Libraries
+- numpy, pandas, lightgbm, seaborn
+- sklearn.ensemble
+- sklearn.tree
+- sklearn.linear_model
+- sklearn.metrics
+- sklearn.preprocessing
+
+### Code: https://github.com/ybezginova2016/03_LA_TaxiOrders/blob/main/03_LA_taxi_orders_main.ipynb
