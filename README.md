@@ -3,7 +3,7 @@ Machine learning model for forecasting the number of taxi orders in the next hou
 
 ## Project Description
 
-The client company ABC, providing tzxi driving services, wants to understand when (at what time during the day) the number of orders increases to be prepared and attract more taxi drivers for such 'hot' hours in oder to satisfy demand. Hence, the company ABC wants to receive a valid machine learning model for predicting demand for an upcoming hour.
+The client company ABC, providing taxi driving services, wants to understand when (at what time during the day) the number of orders increases to be prepared and attract more taxi drivers for such 'hot' hours in order to satisfy demand. Hence, the company ABC wants to receive a valid machine learning model for predicting demand for an upcoming hour.
 
 ## Project Methodology
 
