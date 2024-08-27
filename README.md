@@ -1,30 +1,38 @@
-# 03_LA_TaxiOrders
-Machine learning model for forecasting the number of taxi orders in the next hour.
+## 🚖 **Taxi Orders Forecasting Project**
 
-## Project Description
+### **Project Objective**
+The objective of this project is to build and train a machine learning model that can forecast the number of taxi orders in the next hour. The goal is to help the client, ABC, a taxi service provider, anticipate periods of high demand so they can deploy more drivers during peak hours and better satisfy customer demand.
 
-The client company ABC, providing taxi driving services, wants to understand when (at what time during the day) the number of orders increases to be prepared and attract more taxi drivers for such 'hot' hours in order to satisfy demand. Hence, the company ABC wants to receive a valid machine learning model for predicting demand for an upcoming hour.
+### **Project Description**
+The client, ABC, wants to understand the time periods during the day when the number of taxi orders increases. This information will enable the company to attract more drivers during peak hours, ensuring they can meet demand. The project focuses on developing a reliable machine learning model to predict the number of taxi orders for the upcoming hour.
 
-## Project Methodology
+### **Data**
+The project utilizes archived data provided by the client, which includes historical taxi order information. The data is resampled by the hour to train the model effectively. The dataset can be accessed [here](https://github.com/ybezginova2016/03_LA_TaxiOrders/blob/main/taxi.csv).
 
-1. Use archived data provided by the client.
-2. Resample the data by an hour.
-3. Split the data into train, valid and test samples.
-4. Train different ML models with different hyperparamters.
-5. Choosing the model ML model, making conclusions.
-6. Quality Metric RMSE: Root Mean Square Error <= 48
+### **Project Methodology**
+1. **Data Resampling:** The data is resampled by the hour to create a time series suitable for forecasting.
+2. **Data Splitting:** The dataset is split into training, validation, and test samples to evaluate the model's performance.
+3. **Model Training:** Various machine learning models are trained with different hyperparameters.
+4. **Model Selection:** The best-performing model is selected based on the Root Mean Square Error (RMSE) metric.
+5. **Conclusions:** Recommendations are made based on the model's performance, considering both complex and simpler forecasting methods.
 
-## Project Outcomes
-- The best model is *Linear Regression* wit RMSE = 45.45.
-- Target value for RMSE < 48 as agreed with the client.
-- Time Series is a hard type of data to train. Hence, even though the best RMSE score is for *lightGBM* algorithm, it is worth considering less complex forecasting models such as *Linear Regression*.
+### **Quality Metric**
+- **RMSE (Root Mean Square Error):** The target value for RMSE is less than or equal to 48, as agreed with the client.
 
-## Key Python Libraries
-- numpy, pandas, lightgbm, seaborn
-- sklearn.ensemble
-- sklearn.tree
-- sklearn.linear_model
-- sklearn.metrics
-- sklearn.preprocessing
+### **Project Outcomes**
+- The best model is **Linear Regression** with an RMSE of 45.45.
+- The project demonstrates that while complex models like lightGBM can achieve better RMSE scores, simpler models like Linear Regression are worth considering for time series forecasting due to their interpretability and lower complexity.
 
-### Code: https://github.com/ybezginova2016/03_LA_TaxiOrders/blob/main/03_LA_taxi_orders_main.ipynb
+### **Key Python Libraries**
+- `numpy`, `pandas`, `lightgbm`, `seaborn`
+- `sklearn.ensemble`
+- `sklearn.tree`
+- `sklearn.linear_model`
+- `sklearn.metrics`
+- `sklearn.preprocessing`
+
+### **Code**
+The complete code for the project, including data preprocessing, model training, and evaluation, can be found in the Jupyter notebook [here](https://github.com/ybezginova2016/03_LA_TaxiOrders/blob/main/03_LA_taxi_orders_main.ipynb).
+
+### **Feedback**
+Your comments and questions are welcome at `ybezginova2021@gmail.com` and on Telegram [@yu_bezginova](https://t.me/ybezginova).
